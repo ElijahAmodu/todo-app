@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="container">
+        <!--Welcome Message-->
+        <div id="todo-text">
+            <h1 id=" wecome-text">Todo</h1>
+        </div>
+        <div id="top-text">
+            <i class="fa fa-file-text-o fa-4x"  ></i>
+            <p id="statement">Plan your day</p>            
+        </div>
+
+        <!--Todo Input Region-->
+        <div id="form-div">
+            <form id="form">
+                <input id="input-sentence" type="text" placeholder=" Add today's activity" aria-label="Enter a new todo item"> <br>
+                <input id="add-button" type="submit" value="Add">
+            </form>
+        </div>
+
+        <!--Todo list-->
+        <div id="Todo-list">
+            <ul></ul>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
