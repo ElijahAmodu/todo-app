@@ -1,10 +1,10 @@
 
 
 body{
-    background-color: rgb(136, 172, 229);
+    background-color: rgb(238, 241, 246);
     text-align: center;
-    padding: 0px, 0px, 0px, 0px;
-    margin: 0px, 0px, 0px, 0px;
+    padding: 0px;
+    margin: 0px;
     
 }
 
@@ -35,17 +35,18 @@ body{
     font-size: 25px;
 }
 
-#input{
+#input-sentence{
     margin: 10px;
+   padding-left: 15px;
     width: 50%;
     height: 40px;
     border: 2px solid;
     border-radius: 5px;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.45s ease-in-out;
 }
 
-#input:focus{
-    width: 100%;
+#input-sentence:focus{
+    width: 90%;
 }
 #add-button{
     color: white;
@@ -61,4 +62,19 @@ body{
 #add-button:hover{
     background-color: gray;
     border-color: gray;
+}
+
+#Todo-list{
+    text-align: left;
+}
+#Unordered-list{
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+    
+}
+
+#text-decoration{
+    border: solid black
 }

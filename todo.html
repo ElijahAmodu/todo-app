@@ -11,7 +11,7 @@
     <div id="container">
         <!--Welcome Message-->
         <div id="todo-text">
-            <h1 id=" wecome-text">Todo</h1>
+            <h1 id=" welcome-text">Todo</h1>
         </div>
         <div id="top-text">
             <i class="fa fa-file-text-o fa-4x"  ></i>
@@ -20,17 +20,21 @@
 
         <!--Todo Input Region-->
         <div id="form-div">
-            <form id="form">
+            <form id="form" submit.prevent>
                 <input id="input-sentence" type="text" placeholder=" Add today's activity" aria-label="Enter a new todo item"> <br>
-                <input id="add-button" type="submit" value="Add">
+                <!--<input id="add-button" type="submit" value="Add">-->
+                <button onclick="addTodo()" id="add-button" type="button">Add</button>
             </form>
         </div>
 
         <!--Todo list-->
         <div id="Todo-list">
-            <ul></ul>
+            <ul id="Unordered-list">
+                
+            </ul>
         </div>
     </div>
+    
     <script src="todo.js"></script>
 </body>
 </html>
