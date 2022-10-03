@@ -30,10 +30,10 @@ function listStyle(){
 
 function addTodo () {
     if(inputField.value === ''){
-        return console.log('input field cannot be empty')
+        return alert('Please Add Activity');
     }
     let list = document.createElement('li');
-    list.innerHTML = `<div style="display: flex; align-items: center; justify-content: space-between"><p>${inputField.value}</p><p id="${inputField.value}-delete-btn" style="cursor: pointer">x</p></div>`;
+    list.innerHTML = `<div style="display: flex; align-items: center; justify-content: space-between"><p>${inputField.value}</p><p id="${inputField.value}-delete-btn" style="cursor: pointer"></p></div>`;
     unOrderedList.appendChild(list)
 
     listStyle()
@@ -49,9 +49,18 @@ function addTodo () {
     list.addEventListener("dblclick", function(){
         unOrderedList.removeChild(list)
     })
-    inputField.value = '';
-    event.preventDefault(); 
+    // inputField.value = '';
+    // event.preventDefault(); 
 }
+
+//After add button is clicked 
+    function afterClickingButton(){
+        addButton.addEventListener("click", () => {
+            let clearedField = inputField.value.remove()
+            return clearedField;
+        })
+    }
+    afterClickingButton();
 
     function removeTodo (event) {
         console.log(event)
